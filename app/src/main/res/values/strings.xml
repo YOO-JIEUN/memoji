@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Memoji</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="memoji_title">Hello! Welcome to Memoji!</string>
+    <string name="action_settings">Settings</string>
+</resources>
