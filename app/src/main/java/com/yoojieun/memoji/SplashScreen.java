@@ -7,6 +7,8 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
+import com.yoojieun.memoji.utils.Utils;
+
 /**
  * Created by yoojieun on 2015. 10. 27..
  */
@@ -31,6 +33,8 @@ public class SplashScreen extends Activity{
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
+
+        Utils.log("Splash screen is started");
 
         mHandler.sendEmptyMessageDelayed(100,3000);
 
