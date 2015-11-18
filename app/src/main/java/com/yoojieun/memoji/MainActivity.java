@@ -9,6 +9,7 @@ import android.view.*;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,6 +54,20 @@ public class MainActivity extends AppCompatActivity {
 
                 editor.putString("editTitle", t);
                 editor.putString("editMemo", m);
+                editor.commit();
+
+                Toast.makeText(getApplicationContext(),"저장했습니다",Toast.LENGTH_SHORT).show();
+
+            }
+
+        });
+        cancelbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                editMemo.setText("");
+                editTitle.setText("");
+
                 editor.commit();
 
             }
