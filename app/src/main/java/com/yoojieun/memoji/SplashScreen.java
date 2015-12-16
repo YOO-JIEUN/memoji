@@ -34,9 +34,9 @@ public class SplashScreen extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
 
-        Utils.log("Splash screen is started");
+        Utils.log("@@@@Splash screen is started");
 
-        mHandler.sendEmptyMessageDelayed(100,3000);
+        mHandler.sendEmptyMessageDelayed(100,2000);
 
 //        Thread timerThread = new Thread() {
 //            public void run() {
