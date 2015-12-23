@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
 //                editor.commit();
 
                 Toast.makeText(getApplicationContext(),"저장했습니다",Toast.LENGTH_SHORT).show();
+                finish();
             }
 
         });

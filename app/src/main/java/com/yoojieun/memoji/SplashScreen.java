@@ -20,7 +20,7 @@ public class SplashScreen extends Activity{
         public void handleMessage(Message msg) {
             Log.v("memoji", "handleMessage msg.what = "+ msg.what );
             if(msg.what == 100){
-                Intent intent = new Intent(SplashScreen.this,MainActivity.class);
+                Intent intent = new Intent(SplashScreen.this,ListActivity.class);
                 startActivity(intent);
                 finish();
             }
